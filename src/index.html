@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page title</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="wrapper">
+        <a class="logo">Logo</a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">Home</li>
+            <li class="header__item">Library</li>
+          </ul>
+        </nav>
+      </div>
+      <form class="search">
+        <input class="search__input" type="text">
+        <button class="search__btn" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <ul class="js-film__list">
+        <!-- <li class="film__item">
+          <img class="film__item-img" src="./images/logo.png">
+          <h2 class="film__item-headline"></h2>
+          <div class="film__list-inner">
+            <p class="film__item-genre"></p>
+            <p class="film__item-year"></p>
+            <p class="film__item-rate"></p>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+    <ul class="js-pagination"></ul>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__descr">© 2020 | All Rights Reserved | Developed with</p>
+    </div>
+  </footer>
+</body>
+
 </html>

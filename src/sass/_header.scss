@@ -1,0 +1,24 @@
+.header {
+  padding: 30px;
+  height: 150px;
+  background-color: aqua;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__nav {
+    margin-left: auto;
+  }
+}
+
+.wrapper {
+  display: flex;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
